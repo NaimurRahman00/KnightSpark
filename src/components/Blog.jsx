@@ -4,7 +4,7 @@ const Blog = ({blog}) => {
     const {id, cover_image, description, published_at, title} = blog;
     return (
         <Link
-        to="/"
+        to={`/blog/${id}`}
         className="max-w-sm mx-auto group hover:no-underline hover:shadow-stone-500 hover:shadow-lg transition focus:no-underline bg-gray-900 dark:bg-gray-50"
       >
         <img
